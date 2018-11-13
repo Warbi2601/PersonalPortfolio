@@ -1,0 +1,561 @@
+body {
+    font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    color: black;
+    /* font-size: 1.4rem; */
+}
+
+.container {
+    width: 100%;
+}
+
+h1, p {
+    text-align: center;
+}
+
+header {
+    background-color: #111;
+}
+
+h1 {
+    color: #1a1a1a;
+}
+
+.headBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.flexItem {
+    margin-left: 5px;
+}
+
+.flexItem2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 75%;
+}
+
+.flexItem3 {
+    flex-basis: 25%;
+    box-sizing: border-box;
+}
+
+
+
+/* nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    border-bottom: solid 1px #343d46;
+    padding: 5px;
+}
+
+nav ul li a {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+nav {
+    display: none;
+} */
+
+.banner {
+    background-image: url(../Images/BannerSmall.png);
+    /* background-repeat: no-repeat; */
+    height: 120px;
+    flex-basis: 100%;
+    position: relative;
+}
+
+.pageTitle {
+    text-align: center;
+    font-size: 2rem;
+    margin: 0px;
+    padding: 20px 0px 10px 0px;
+    color: black;
+    flex-basis: 100%;
+}
+
+.title {
+    font-size: 1.8rem;
+    margin: 0;
+    color: white;
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin: 0px;
+    color: white;
+}
+
+.whiteBackground {
+    background-color: #fcfcfc;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.greyBackground {
+    background-color: #ededed;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.whiteBackground:first-child {
+    padding-top: 0px;
+}
+
+.text {
+    margin-left: 5%;
+    margin-right: 5%;
+    border-top: 1px solid #d8670d;
+    border-bottom: 1px solid #d8670d;
+    padding: 15px 0px;
+    width: 100%;
+}
+
+.text p {
+    text-align: justify;
+    text-align-last: center;
+}
+
+.text h3 {
+    text-align: center;
+}
+
+.recommendation .text {
+    width: auto;
+}
+
+.requiredField {
+    color: red;
+}
+
+.requiredFieldBtn {
+    color: #fcfcfc;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+footer {
+    border-top: solid 1px #d8670d;
+    text-align: center;
+    box-shadow: #d8670d 0px 0px 10px 0px;
+    background-color: #111111;
+    color: white;
+}
+
+.mobH1 {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #DDEAF2;
+    margin-top: 0px;
+}
+
+label {
+    flex-basis: 100%;
+    margin: 5px;
+}
+
+label {
+    font-size: 1.4rem;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+input, textarea  {
+    box-sizing: border-box;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
+}
+
+textarea[id=message]
+{
+    padding:10px 10px 15vh;
+    resize: vertical;
+}
+
+.contactName {
+    display: flex;
+    box-sizing: border-box;
+    flex-basis: 100%;
+}
+
+.inputBox {
+	flex-basis: 100%;
+	display: flex;
+	margin: 11px 0px;
+}
+
+form {
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+.btnStandard {
+    background-color: #d8670d;
+    color: white;
+}
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 3em 0.5em 3em;
+}
+
+blockquote:before {
+    position: absolute;
+    font-size: 6em;
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: "\201C";
+}
+blockquote:after {
+    position: absolute;
+    float:right;
+    font-size:6em;
+    line-height: 1;
+    right:0;
+    bottom:-0.5em;
+    content: "\201D";
+}
+
+.cite {
+    padding: 0 3em 0 3em;
+    text-align:right;
+    margin: 0.5em;
+}
+
+.cite cite:before {
+    content: "\2013";
+}
+
+.imgWrapper > img {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.projDesc {
+    flex-direction: column;
+    text-align: center;
+}
+
+.projDesc p {
+    text-align: justify;
+}
+
+.projDesc h2 {
+    margin-top: 0px;
+}
+
+.imgGrid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 0px;
+    width: 0px;
+}
+
+.grid {
+    padding: 5px;
+    width:50%;
+    box-sizing: border-box;
+}
+
+.cvdown a{
+    font-size: 1.3rem;
+    text-align: center;
+    color: #d8670d;
+}
+
+.cvdown p{
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.cvdown h3{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 0px;
+}
+
+.proj {
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.jobTitle h4 {
+    margin:0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.jobDesc p {
+    text-align: justify;
+}
+
+.jobTitle, .jobDesc {
+    padding: 0px 20px 0px 20px;
+    flex-basis: 100%;
+}
+
+.WorkExperienceList .greyBackground .text {
+    margin-top: 40px;
+}
+
+.PreviousProjectsList .greyBackground .text {
+    margin-top: 40px;
+}
+
+.QualList .greyBackground .text {
+    margin-top: 40px;
+}
+
+.AboutMeList .whiteBackground {
+    padding-top: 0px;
+}
+
+.qualTitle h4 {
+    margin:0;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.qualDesc {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.qualDesc p {
+    text-align: justify;
+}
+
+.qualDesc table{
+    margin: 0 auto;
+	border-spacing: 30px 0px;
+}
+
+.tableCellCentre {
+    text-align: center;
+}
+
+blockquote {
+    text-align: justify;
+}
+
+span.burgerMenu {
+    font-size: 35px;
+    float: right;
+    color: #d8670d;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #272727;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 25px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav nav ul:nth-child(1) {
+    padding-top: 20px;
+}
+
+.pageCheck {
+    background-color: #d8670d;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #d8670d;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.circle { 
+    width: 100px; 
+    height: 100px; 
+    margin: auto;
+    padding-top: 8px;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+    border: 2px solid #d8670d; 
+    margin: auto;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.circle img:hover {
+    background-color: #d8670d;
+}
+
+.codeLogoList {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.codeLogoList .codeLogo{
+    width: 50%;
+    height: 100%;
+    padding: 10px 0px;
+}
+
+.codeLogo img{
+    width: 70%;
+    height: 70%;
+    margin-left: 17%;
+    
+}
+
+.codeLogo {
+    margin:auto;
+}
+
+nav {
+    display: block;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.greyBackground .recommendation {
+    padding-top: 40px;
+}
+
+.footerlogo a img {
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.footerlogo a img:hover {
+    background-color: white;
+}
+
+.companyLogo {
+    display: none;
+}
+
+
+
+/* Burger Menu */
+
+.bars{
+    float:left;
+}
+    
+.bar1, .bar2, .bar3 {
+     width: 24px;
+     height: 4px;
+     background-color: #1a1a1a;
+     margin: 6px 0;
+}
+
+.menuLabel{
+    color:#1a1a1a;
+    float:left;
+}
+
+.burgerMenu {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.animateBurger .bar2 {
+    opacity: 0;
+}
+
+/* Rotate first bar */
+.animateBurger .bar1 {
+    /* -webkit-transform: rotate(-45deg) translate(0,0) ;*/
+    /* transform: rotate(-45deg) translate(-8px, 6px) ;*/
+    /* l/r t/b*/
+    transform: rotate(-45deg) translate(-6px, 8px) ;
+    }
+    /* Fade out the second bar */
+    .animateBurger .bar2 {
+     opacity: 0;
+    }
+    /* Rotate last bar */
+    .animateBurger .bar3 {
+    /* -webkit-transform: rotate(45deg) translate(-8px, -8px) ;*/
+    /* transform: rotate(45deg) translate(-8px, -4px) ;*/
+    transform: rotate(45deg) translate(-6px, -8px) ;
+    }
+

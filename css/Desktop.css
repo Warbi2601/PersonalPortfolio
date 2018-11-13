@@ -1,0 +1,232 @@
+/* CSS Document */
+/* .container{
+	max-width: 1366px;
+	1366x768	16:9
+    margin:auto;
+} */
+.burgerMenu, .mobH1{
+	display:none;
+}
+header nav ul li h1{
+	display:block;
+	padding:0;
+	margin:5px;
+	font-size:1.2rem;
+	color: #DDEAF2;
+}
+
+.banner{
+	background-image: url(../Images/BannerDesktop.png);
+	background-repeat: no-repeat;
+	height:200px;
+}
+
+@media screen and (min-width: 1571px) {
+    .banner {
+		background-image: url(../Images/BannerDesktopLarge.png);
+		background-repeat: no-repeat;
+		height:200px;
+    }
+}
+
+nav {
+    display: block;
+    background-color: #111;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin: 0px;
+}
+
+.searchItem {
+	order: 0;
+}
+
+nav ul li {
+	border: none;
+	padding: 5px;
+	list-style: none;
+}
+
+.sidenav a {
+	border: none;
+	padding: 5px 10px;
+	transition: 0.7s;
+	background-color: #111;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);	
+    width: auto;
+}
+
+/* #mySidenav a:hover {
+    border-bottom: 3px solid #d8670d;
+} */
+
+.slideHover::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #d8670d;
+	transition: width .5s;
+	position: relative;
+	bottom: -4px;
+}
+
+.slideHover:hover::after {
+	width: 100%;
+}
+
+.pageCheck{
+	text-decoration: none;
+	position: relative;
+}
+
+ .pageCheck::after {
+	content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #d8670d;
+	position: relative;
+	bottom: -4px;
+} 
+
+nav ul li:first-child {
+	display: none;
+}
+
+.grid {
+	padding: 5px;
+	width: 25%;
+}
+
+.content {
+	display: flex;
+	box-sizing: border-box;
+}
+
+.projDesc {
+	flex-basis: 60%;
+	flex-direction: row;
+	text-align: unset;
+	margin-right: 15px;
+}
+
+.greyBackground .proj .projDesc {
+	padding-left: 15px;
+}
+
+.subtitle {
+	flex-basis: 100%;
+	text-shadow: 2px 2px black
+}
+
+.title {
+	flex-basis: 100%;
+	text-shadow: 4px 4px black;
+	font-size: 3.0rem;
+}
+
+.recommendation {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.text {
+	flex-basis: 70%;
+	margin: auto;
+}
+
+.imgWrapper {
+	flex-basis: 40%;
+}
+
+.greyBackground .text .proj .imgWrapper {
+	margin-right: 20px;
+}
+
+.whiteBackground .text .proj .imgWrapper {
+	margin-left: 20px;
+}
+
+.greyBackground .proj {
+	flex-direction: row-reverse;
+}
+
+.proj {
+	flex-direction: row;
+}
+
+#mySidenav {
+	display: block;
+}
+
+.flexItem2 {
+	flex-basis: 100%;
+	margin-bottom: 30px;
+}
+
+.flexItem3 {
+	flex-basis: calc(70% + 40px);
+	margin:auto;
+}
+
+.sidenav {
+	height: auto;
+	width: auto;
+	position: static;
+	padding: 0px;
+}
+
+.circle { 
+    width: 180px; 
+    height: 180px; 
+}
+
+.codeLogoList {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin: 30px 0px;
+}
+
+.codeLogoList .codeLogo{
+    width: auto;
+    height: auto;
+}
+
+.codeLogo img{
+    width: auto;
+	height: auto;
+	margin: 0px;
+}
+
+.jobTitle h4 {
+	padding-left: 126px;
+}
+
+.companyLogo {
+	display: block;
+	float: right;
+}
+
+.qualDesc table{
+	border-spacing: 150px 0px;
+	width: 60%;
+}
+
+.input {
+	margin: 16px 5px;
+}
+
+.contactName {
+	width: 50%;
+    margin: auto;
+}
+
+.codeLogo {
+	margin: 0px;
+}
