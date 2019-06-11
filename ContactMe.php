@@ -115,7 +115,7 @@ session_start();
                         <div class="inputBox">
                         <!-- <label for="name"><span class="requiredField">*</span>Name:</label> -->
                         <span class="requiredField">*</span>
-                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="text" name="name" id="name" placeholder="Name" required>
                         <br/>
                         </div>
 
@@ -123,7 +123,7 @@ session_start();
                         <div class="inputBox">
                         <!-- <label for="email"><span class="requiredField">*</span>Email: </label> -->
                         <span class="requiredField">*</span>
-                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
                         <br/>
                         </div>
 
@@ -132,7 +132,7 @@ session_start();
                         <div class="inputBox">
                         <!-- <label for="phoneNumber"><span class="requiredField">*</span>Phone Number: </label> -->
                         <span class="requiredField">*</span>
-                        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number">
+                        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required>
                         <br/>
                         </div>
 
@@ -140,7 +140,7 @@ session_start();
                         <div class="inputBox">
                         <!-- <label for="message"><span class="requiredField">*</span>Message: </label> -->
                         <span class="requiredField">*</span>
-                        <textarea name="message" id="message" placeholder="Type your message here..." ></textarea>
+                        <textarea name="message" id="message" placeholder="Type your message here..." required></textarea>
 
                         <!-- <input type="text" name="message" id="message" placeholder="Type your message here..."> -->
                         <br/>
@@ -162,7 +162,7 @@ session_start();
 
 
     <footer>
-        <p class="lastUpdated">Last Updated: </p>
+        <p class="lastUpdated">Page Last Updated: </p>
         <p>Copyright &copy; Josh Warburton 2018</p>
         <div class="footerlogo">
             <a href="https://www.linkedin.com/in/joshwarburton/"><img src="Images/LinkedIn.png" alt="" width="40"

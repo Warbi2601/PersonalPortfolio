@@ -20,6 +20,5 @@ function closeNav() {
 }
 
 $(document).ready(function() {
-	debugger;
-	$('.lastUpdated').text("Last Updated: " + new Date(document.lastModified).toLocaleDateString("en-GB"));
+	$('.lastUpdated').text("Page Last Updated: " + new Date(document.lastModified).toLocaleDateString("en-GB"));
 });
