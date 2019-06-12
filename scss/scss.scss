@@ -28,23 +28,10 @@
       }
       &-content{
         position: relative;
-        padding: 60px;
-        padding-top: 5vw;
-        padding-bottom: 10vw;
+        padding:2vh 15px 7.2vw 15px;
         z-index: 1;
         text-align: center;
-        
-        .heading{
-          font-size: 40px;
-          max-width: 700px;
-          font-weight: 100;
-          margin: 0 auto;
-          color: $bg;
-          line-height: 1.5;
-          letter-spacing: 8px;
-          text-transform: uppercase;
-          margin-bottom: 60px;
-        }
+    
       }
       &-scroll {
         width: 40px;
@@ -53,6 +40,7 @@
         border-radius: 25px;
         position: relative;
         display: inline-block;
+        margin-top: 2vh;
         
         &:before {
           content: '';

@@ -19,6 +19,7 @@ session_start();
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/scss.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" media="only screen and (min-width : 600px)" href="css/Desktop.css">
     <title>Josh Warburton</title>
@@ -28,13 +29,13 @@ session_start();
 
     <header>
         <div class="container">
-
+    
             <div class="headBar">
                 <div class="flexItem2">
                     <h1 class="title">Josh Warburton</h1>
                     <p class="subtitle">Software Developer</p>
                 </div>
-
+    
                 <div class="flexItem3">
                     <span class="burgerMenu" onclick="openNav()">&#9776;</span>
                     <div id="mySidenav" class="sidenav">
@@ -52,22 +53,39 @@ session_start();
                         </nav>
                     </div>
                 </div>
-
             </div>
-
-            <div class="banner">
-                <div class="circle">
-                    <img src="Images/Logo2018.png">
+    
+            <div class="BannerCont" id="BannerCont">
+                <div class="BannerCont-grad"></div>
+    
+                <svg class="BannerCont-diagonal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                    preserveAspectRatio="none">
+                    <polygon points="0,100 100,0 100,100"></polygon>
+                </svg>
+    
+                <div class="BannerCont-content">
+    
+                    <!-- <div class="banner">
+                        <div class="circle">
+                            <img src="Images/Logo2018.png">
+                        </div>
+                    </div> -->
+                    <h1 class="heading">
+                        Contact Me
+                    </h1>
+                    <div class="circle">
+                        <img src="Images/Logo2018.png">
+                    </div>
+                    <div class='BannerCont-scroll'></div>
                 </div>
             </div>
-
+    
         </div>
     </header>
 
 
     <div class="container">
         <div class="whiteBackground">
-            <h1 class="pageTitle">Contact Me</h1>
             <div class="text">
 
             <p>

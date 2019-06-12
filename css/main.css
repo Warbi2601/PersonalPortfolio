@@ -119,10 +119,6 @@ nav {
     flex-wrap: wrap;
 }
 
-.whiteBackground:first-child {
-    padding-top: 0px;
-}
-
 .text {
     margin-left: 5%;
     margin-right: 5%;
@@ -354,10 +350,6 @@ blockquote:after {
     margin-top: 40px;
 }
 
-.AboutMeList .whiteBackground {
-    padding-top: 0px;
-}
-
 .qualTitle h4 {
     margin:0;
     text-align: center;
@@ -396,7 +388,7 @@ span.burgerMenu {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     right: 0;
     background-color: #1d1f20;
@@ -449,8 +441,9 @@ span.burgerMenu {
     width: 100px; 
     height: 100px; 
     margin: auto;
-    margin-bottom: 3vh;
-    padding-top: 8px;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    padding: 8px 0px;
 }
 
 .circle img {
@@ -516,6 +509,16 @@ nav ul {
     display: none;
 }
 
+.BannerCont-content .heading {
+    font-size: 2rem;
+    max-width: 700px;
+    font-weight: 100;
+    margin: 0 auto;
+    color: #1d1f20;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
 
 /* Burger Menu */

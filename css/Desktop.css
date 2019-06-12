@@ -236,6 +236,17 @@ nav ul li:first-child {
 	margin: 0px;
 }
 
+.BannerCont-content .heading {
+    font-size: 3rem;
+    max-width: 700px;
+    font-weight: 100;
+    margin: 0 auto;
+    color: #1d1f20;
+    line-height: 1.5;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
 /* .proj:hover .imgWrapper {
 	opacity: 0.5;
 } */
