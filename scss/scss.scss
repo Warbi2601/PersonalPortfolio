@@ -1,15 +1,13 @@
-    // Change me
     $bg: #1d1f20;
 
     body{
       background-color: $bg;
     }
-    .hero {
+    .BannerCont {
       position: relative;
       background-image: url(../Images/BannerScrollBW.png);
       background-size: cover;
       background-position: bottom center;
-    //   border: 2vw solid $bg;
       
       &-grad {
         position: absolute;
@@ -24,12 +22,9 @@
         position: absolute;
         bottom: -0.5px;
         width: 100%;
-        // Change the height if you want the skew to be more "aggressive"
         height: 12vw;
         z-index: 2;
         fill: $bg;
-        // Uncomment opacity prop to see how it works
-        // opacity: 0.85;
       }
       &-content{
         position: relative;
