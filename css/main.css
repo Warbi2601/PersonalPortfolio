@@ -15,7 +15,8 @@ h1, p {
 }
 
 header {
-    background-color: #111;
+    background-color: #1d1f20;
+    display: inline;
 }
 
 h1 {
@@ -174,7 +175,7 @@ footer {
     border-top: solid 1px #d8670d;
     text-align: center;
     box-shadow: #d8670d 0px 0px 10px 0px;
-    background-color: #111111;
+    background-color: #1d1f20;
     color: white;
 }
 
@@ -396,7 +397,7 @@ span.burgerMenu {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #272727;
+    background-color: #1d1f20;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 25px;
@@ -446,6 +447,7 @@ span.burgerMenu {
     width: 100px; 
     height: 100px; 
     margin: auto;
+    margin-bottom: 3vh;
     padding-top: 8px;
 }
 
@@ -558,4 +560,3 @@ nav ul {
     /* transform: rotate(45deg) translate(-8px, -4px) ;*/
     transform: rotate(45deg) translate(-6px, -8px) ;
     }
-

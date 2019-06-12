@@ -15,6 +15,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/scss.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" media="only screen and (min-width : 600px)" href="css/Desktop.css">
     <title>Josh Warburton</title>
@@ -23,13 +24,13 @@
 <body>
     <header>
         <div class="container">
-
+    
             <div class="headBar">
                 <div class="flexItem2">
                     <h1 class="title">Josh Warburton</h1>
                     <p class="subtitle">Software Developer</p>
                 </div>
-
+    
                 <div class="flexItem3">
                     <span class="burgerMenu" onclick="openNav()">&#9776;</span>
                     <div id="mySidenav" class="sidenav">
@@ -48,13 +49,32 @@
                     </div>
                 </div>
             </div>
-
-            <div class="banner">
-                <div class="circle">
-                    <img src="Images/Logo2018.png">
-                </div>
-            </div>
-
+    
+            <section class="hero" id="hero">
+                <div class="hero-grad"></div>
+    
+                <svg class="hero-diagonal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                    preserveAspectRatio="none">
+                    <polygon points="0,100 100,0 100,100"></polygon>
+                </svg>
+    
+                <main class="hero-content">
+    
+                    <!-- <div class="banner">
+                        <div class="circle">
+                            <img src="Images/Logo2018.png">
+                        </div>
+                    </div> -->
+                    <!-- <h1 class="heading">
+                "Motivation comes from working on things we care about"
+            </h1> -->
+                    <div class="circle">
+                        <img src="Images/Logo2018.png">
+                    </div>
+                    <div class='hero-scroll'></div>
+                </main>
+            </section>
+    
         </div>
     </header>
 
@@ -63,7 +83,6 @@
             <div class="whiteBackground">
                 <h1 class="pageTitle">About Me</h1>
                 <div class="text">
-                    <h3>Hello, I'm Josh and I'm an aspiring Software Developer from Bolton</h3>
                     <p><br />
                         I'm currently studying in my second year at Sheffield Hallam University on the BEng Software
                         Engineering course.

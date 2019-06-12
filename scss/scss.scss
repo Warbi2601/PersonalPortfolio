@@ -1,0 +1,104 @@
+    // Change me
+    $bg: #1d1f20;
+
+    body{
+      background-color: $bg;
+    }
+    .hero {
+      position: relative;
+      background-image: url(../Images/BannerScrollBW.png);
+      background-size: cover;
+      background-position: bottom center;
+    //   border: 2vw solid $bg;
+      
+      &-grad {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(90deg, rgba(#FDBB2D, 0.8) 0%, rgba(#3A1C71, 0.67) 100%);
+        z-index: 0;
+      }
+      &-diagonal{
+        position: absolute;
+        bottom: -0.5px;
+        width: 100%;
+        // Change the height if you want the skew to be more "aggressive"
+        height: 12vw;
+        z-index: 2;
+        fill: $bg;
+        // Uncomment opacity prop to see how it works
+        // opacity: 0.85;
+      }
+      &-content{
+        position: relative;
+        padding: 60px;
+        padding-top: 5vw;
+        padding-bottom: 10vw;
+        z-index: 1;
+        text-align: center;
+        
+        .heading{
+          font-size: 40px;
+          max-width: 700px;
+          font-weight: 100;
+          margin: 0 auto;
+          color: $bg;
+          line-height: 1.5;
+          letter-spacing: 8px;
+          text-transform: uppercase;
+          margin-bottom: 60px;
+        }
+      }
+      &-scroll {
+        width: 40px;
+        height: 70px;
+        box-shadow: inset 0 0 0 1px $bg;
+        border-radius: 25px;
+        position: relative;
+        display: inline-block;
+        
+        &:before {
+          content: '';
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          left: 50%;
+          background: $bg;
+          margin-left: -4px;
+          top: 8px;
+          border-radius: 4px;
+          animation-duration: 1.5s;
+          animation-iteration-count: infinite;
+          animation-name: scroll;
+        }
+      }
+    }
+    
+    .content{
+      width: 90%;
+      max-width: 700px;
+      font-size: 20px;
+      color: #fff;
+      margin: 0 auto;
+      padding: 60px 0;
+      line-height: 1.6;
+      
+      p{
+        margin-top: 0;
+        margin-bottom: 60px;
+        color: mix(#FDBB2D, #3A1C71, 40%);
+      }
+    }
+    
+    @keyframes scroll {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(46px);
+      }
+    }
+    
