@@ -2,10 +2,8 @@ body {
     font-family: 'Century Gothic', Helvetica, Arial, sans-serif;
     padding: 0px;
     margin: 0px;
-    color: black;
+    color: #1d1f20;
     background-color: #1d1f20;
-
-    /* font-size: 1.4rem; */
 }
 
 .container {
@@ -48,36 +46,8 @@ h1 {
     box-sizing: border-box;
 }
 
-
-
-/* nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding-left: 0px;
-    margin: 0px;
-}
-
-nav ul li {
-    border-bottom: solid 1px #343d46;
-    padding: 5px;
-}
-
-nav ul li a {
-    display: inline-block;
-    width: 100%;
-    text-decoration: none;
-    color: #1a1a1a;
-}
-
-nav {
-    display: none;
-} */
-
 .banner {
     background-image: url(../Images/BannerSmall.png);
-    /* background-repeat: no-repeat; */
     height: 120px;
     flex-basis: 100%;
     position: relative;
@@ -285,6 +255,33 @@ blockquote:after {
 
 .projDesc h2 {
     margin-top: 0px;
+}
+
+.gitProjImg {
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+.gitMsg {
+    position: absolute;
+    bottom: 17%;
+    right: 24%;
+    color: #fcfcfc;
+    padding: 15px;
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: #1d1f20;
+}
+
+.gitProj {
+    text-decoration: none;
+    color: #1d1f20;
+    transition: 0.5s;
+}
+
+.imgWrapper {
+    position: relative;
+    width: 100%;
 }
 
 .imgGrid {
@@ -499,6 +496,10 @@ nav ul {
 .footerlogo a img {
     border-radius: 50%;
     transition: 0.5s;
+}
+
+.GHLogo {
+    border-radius: 50%;
 }
 
 .footerlogo a img:hover {

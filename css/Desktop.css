@@ -247,6 +247,84 @@ nav ul li:first-child {
     text-transform: uppercase;
 }
 
-/* .proj:hover .imgWrapper {
-	opacity: 0.5;
-} */
+.gitProjImg {
+	opacity: 1;
+}
+
+.gitMsg {
+	bottom: 25%;
+    right: 29%;
+	opacity: 0;
+}
+
+#ProjBG a:hover .gitProjImg {
+    opacity: 0.8;
+}
+
+#ProjBG a:hover .gitMsg {
+	opacity: 1;
+}
+
+#ProjBG a:hover {
+    color: #d8670d;
+}
+
+#ProjF a:hover .gitProjImg {
+    opacity: 0.8;
+}
+
+#ProjF a:hover .gitMsg {
+	opacity: 1;
+}
+
+#ProjF a:hover {
+    color: #d8670d;
+}
+
+#ProjCPS a:hover .gitProjImg {
+    opacity: 0.8;
+}
+
+#ProjCPS a:hover .gitMsg {
+	opacity: 1;
+}
+
+#ProjCPS a:hover {
+    color: #d8670d;
+}
+
+#ProjCT a:hover .gitProjImg {
+    opacity: 0.8;
+}
+
+#ProjCT a:hover .gitMsg {
+	opacity: 1;
+}
+
+#ProjCT a:hover {
+    color: #d8670d;
+}
+
+#ProjPP a:hover .gitProjImg {
+    opacity: 0.8;
+}
+
+#ProjPP a:hover .gitMsg {
+	opacity: 1;
+}
+
+#ProjPP a:hover {
+    color: #d8670d;
+}
+
+#ProjEW a:hover .gitProjImg {
+    opacity: 0.8;
+}
+
+#ProjEW a:hover .gitMsg {
+	opacity: 1;
+}
+
+#ProjEW a:hover {
+    color: #d8670d;
+}
