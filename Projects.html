@@ -1,0 +1,447 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <!-- START OF Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128932581-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128932581-1');
+    </script>
+    <!-- END OF Global site tag (gtag.js) - Google Analytics -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/scss.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="only screen and (min-width : 600px)" href="css/Desktop.css">
+    <title>Josh Warburton</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <div class="headBar">
+                <div class="flexItem2">
+                    <h1 class="title">Josh Warburton</h1>
+                    <p class="subtitle">Software Developer</p>
+                </div>
+
+                <div class="flexItem3">
+                    <span class="burgerMenu" onclick="openNav()">&#9776;</span>
+                    <div id="mySidenav" class="sidenav">
+                        <nav>
+                            <ul>
+                                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                                <li><a href="index.html" class="slideHover">About Me</a></li>
+                                <li><a href="Qualifications.html" class="slideHover">Qualifications</a></li>
+                                <li><a href="WorkExperience.html" class="slideHover">Work Experience</a></li>
+                                <li><a href="Recommendations.html" class="slideHover">Recommendations</a></li>
+                                <li><a href="Projects.html" class="pageCheck">Projects</a></li>
+                                <li><a href="CV.html" class="slideHover">CV</a></li>
+                                <li><a href="ContactMe.php" class="slideHover">Contact Me</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="BannerCont" id="BannerCont">
+                <div class="BannerCont-grad"></div>
+
+                <svg class="BannerCont-diagonal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"
+                    preserveAspectRatio="none">
+                    <polygon points="0,100 100,0 100,100"></polygon>
+                </svg>
+
+                <div class="BannerCont-content">
+                    <h1 class="heading">
+                        Projects
+                    </h1>
+                    <div class="circle">
+                        <img src="Images/Logo2018.png">
+                    </div>
+                    <div class='BannerCont-scroll'></div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <div class="PreviousProjectsList">
+        <div class="subheader">
+            <h1>Personal Projects</h1>
+        </div>
+        <div class="whiteBackground">
+            <br>
+            <div class="text" id="ProjPP">
+                <a href="https://github.com/Warbi2601/PersonalPortfolio" class="gitProj">
+                    <div class="proj">
+                        <div class="projDesc">
+                            <h2>Personal Portfolio Website</h2>
+                            <p>Written In: PHP7, HTML, CSS/SASS, jQuery</p>
+                            <p>
+                                This website itself is a great example of my web development skills and really shows my
+                                passion
+                                for it.
+                                I worked on this in my spare time alongside University because it's something I
+                                genuinely
+                                enjoy. It is kept regurlary up to date with my recent work.
+
+                            </p>
+                        </div>
+                        <div class="imgWrapper">
+                            <img src="Images/PersonalPortfolioWebsite.png" alt="" class="gitProjImg">
+                            <h2 class="gitMsg">View On <img src="Images/GitHub.png" alt="" width="20" height="20"
+                                    class="GHLogo"></h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="subheader">
+            <h1>2nd Year University Projects</h1>
+        </div>
+        <div class="greyBackground">
+            <div class="text" id="ProjEW">
+                <a href="https://github.com/Warbi2601/Astro-Events" class="gitProj">
+                    <div class="proj">
+                        <div class="projDesc">
+                            <h2>Events Website</h2>
+                            <p>Written In: PHP7, HTML, CSS/SASS, jQuery, Vue.js, SQL, Google Maps API</p>
+                            <p>
+                                This is my flagship project. I experimented with lots of new technologies in this one in
+                                order
+                                to extend my knowledge. Funtionality includes: Filtering by category, CMS
+                                for admin account, venue details (map and closest car parks), view all
+                                purchases and much more.
+                            </p>
+                        </div>
+                        <div class="imgWrapper">
+                            <img src="Images/eventswebsite.png" alt="" class="gitProjImg">
+                            <h2 class="gitMsg">View On <img src="Images/GitHub.png" alt="" width="20" height="20"
+                                    class="GHLogo"></h2>
+                        </div>
+                    </div>
+                </a>
+                <a href="http://www.joshwarburton.co.uk/eventswebsite" class="footnote">
+                    <p>I have hosted the website so that all the functionality can be displayed in full. You can find it
+                        here!</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="whiteBackground">
+            <div class="text" id="ProjGL">
+                <a href="https://github.com/Warbi2601/OOP-Game-Library" class="gitProj">
+                    <div class="proj">
+                        <div class="projDesc">
+                            <h2>Game Library</h2>
+                            <p>Written In: C++</p>
+                            <p>
+                                User can login to multiple accounts and manage their library by buying, selling and
+                                gifting
+                                games. Each user also has a list of friends who they can interact with for multiple
+                                benefits.
+                                Included lots of work with pointers and linked lists.
+                            </p>
+                        </div>
+                        <div class="imgWrapper">
+                            <img src="Images/GameLibrary.png" alt="" class="gitProjImg">
+                            <h2 class="gitMsg">View On <img src="Images/GitHub.png" alt="" width="20" height="20"
+                                    class="GHLogo"></h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="greyBackground">
+            <div class="text" id="ProjSaM">
+                <a href="https://github.com/Warbi2601/OOP-Assignment-Snake-and-Mouse" class="gitProj">
+                    <div class="proj">
+                        <div class="projDesc">
+                            <h2>Snake and Mouse</h2>
+                            <p>Written In: C++</p>
+                            <p>
+                                Grid-style game where the user plays as a mouse who's objective is to find a nut and
+                                escape
+                                down a hole. The game inluded many extra features such as cheats, time based
+                                bombs and a snake tail among others.
+                            </p>
+                        </div>
+                        <div class="imgWrapper">
+                            <img src="Images/snakeandmouse.png" alt="" class="gitProjImg">
+                            <h2 class="gitMsg">View On <img src="Images/GitHub.png" alt="" width="20" height="20"
+                                    class="GHLogo"></h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="whiteBackground">
+            <div class="text" id="ProjMBS">
+                <a href="https://github.com/Warbi2601/Message-Board-Server" class="gitProj">
+                    <div class="proj">
+                        <div class="projDesc">
+                            <h2>Message Board Server</h2>
+
+                            <p>Written In: Java</p>
+                            <p>
+                                This is a server that was created to work alongside a client also created by myself
+                                to function together as a message board using JSON. Emphasis was on server side
+                                validation to make
+                                sure users were restricted on what they could send and how frequently as well as
+                                retention of data
+                                between sessions.
+                            </p>
+                        </div>
+                        <div class="imgWrapper">
+                            <img src="Images/JavaServer.png" alt="" class="gitProjImg">
+                            <h2 class="gitMsg">View On <img src="Images/GitHub.png" alt="" width="20" height="20"
+                                    class="GHLogo"></h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="greyBackground">
+            <div class="text" id="ProjMBC">
+                <a href="https://github.com/Warbi2601/NSD-Client-Message-Board" class="gitProj">
+                    <div class="proj">
+                        <div class="projDesc">
+                            <h2>Message Board Client</h2>
+                            <p>Written In: Java</p>
+                            <p>
+                                This is a client that was created to work alongside a server also created by myself
+                                to function together as a message board using JSON. Functionality included: Fully
+                                customizable colours,
+                                picture message capability, subscriber list, seperate thread for contacting the server
+                                to get new messages.
+                            </p>
+                        </div>
+                        <div class="imgWrapper">
+                            <img src="Images/JavaClient.png" alt="" class="gitProjImg">
+                            <h2 class="gitMsg">View On <img src="Images/GitHub.png" alt="" width="20" height="20"
+                                    class="GHLogo"></h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="whiteBackground">
+            <div class="text" id="ProjWHV">
+                <a href="https://github.com/Warbi2601/Java-Workplace-Hierarchy" class="gitProj">
+                    <div class="proj">
+                        <div class="projDesc">
+                            <h2>Workplace Hierarchy Viewer</h2>
+                            <p>Written In: Java</p>
+                            <p>
+                                This program is designed to take a .csv file of employee details and read it in to
+                                various
+                                collections of objects. It will then calculate a company hierarchy and output it in a
+                                tree
+                                format with relevant additional information.
+                            </p>
+                        </div>
+                        <div class="imgWrapper">
+                            <img src="Images/JavaWorkplaceHierarchy.png" alt="" class="gitProjImg">
+                            <h2 class="gitMsg">View On <img src="Images/GitHub.png" alt="" width="20" height="20"
+                                    class="GHLogo"></h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="subheader">
+            <h1>1st Year University Projects</h1>
+        </div>
+        <div class="greyBackground">
+            <div class="text" id="ProjF">
+                <a href="https://github.com/Warbi2601/Bulletin-Board" class="gitProj">
+                    <div class="proj">
+                        <div class="projDesc">
+                            <h2>Forum</h2>
+                            <p>Written In: C# ASP.NET, HTML, CSS, SQL</p>
+                            <p>
+                                It has the functionality to
+                                create users, boards, post on those boards, view all the posts that user has
+                                made and change password etc.
+                                The administrator account can also view all the users account details and delete other
+                                users.
+                                This was my first experience with ASP.NET and taught me a lot.
+                            </p>
+                        </div>
+                        <div class="imgWrapper">
+                            <img src="Images/BulletinBoard.png" alt="" class="gitProjImg">
+                            <h2 class="gitMsg">View On <img src="Images/GitHub.png" alt="" width="20" height="20"
+                                    class="GHLogo"></h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="whiteBackground">
+            <div class="text" id="ProjBG">
+                <a href="https://github.com/Warbi2601/Breakout-Game" class="gitProj">
+                    <div class="proj">
+                        <div class="projDesc">
+                            <h2>Breakout Game</h2>
+                            <p>Written In: C#</p>
+                            <p>
+                                It was developed in C# Windows Forms. The final version of the
+                                game includes numerous features including randomised colouring of each block,
+                                endless
+                                generating levels that show a running points tally as you
+                                progress through shown on each "Next Level" and "End
+                                Game"
+                                Screen.
+                            </p>
+                        </div>
+                        <div class="imgWrapper">
+                            <img src="Images/breakoutss.png" alt="" class="gitProjImg">
+                            <h2 class="gitMsg">View On <img src="Images/GitHub.png" alt="" width="20" height="20"
+                                    class="GHLogo"></h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="greyBackground">
+            <div class="text" id="ProjCPS">
+                <a href="https://github.com/Warbi2601/Car-Park-Simulator" class="gitProj">
+                    <div class="proj">
+                        <div class="projDesc">
+                            <h2>Car Park System</h2>
+                            <p>Written In: C#</p>
+                            <p>
+                                This was created
+                                with
+                                the idea that if you took
+                                the UI away, the program would work if integrated into the infrastructure of a car
+                                park.
+                                This includes all the
+                                validation around tickets and payment and works with sensors to detect entries and
+                                exits.
+                            </p>
+                        </div>
+                        <div class="imgWrapper">
+                            <img src="Images/CarParkSystem.png" alt="" class="gitProjImg">
+                            <h2 class="gitMsg">View On <img src="Images/GitHub.png" alt="" width="20" height="20"
+                                    class="GHLogo"></h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="whiteBackground">
+            <div class="text" id="ProjCT">
+                <a href="https://github.com/Warbi2601/Christmas-Tree-Builder" class="gitProj">
+                    <div class="proj">
+                        <div class="projDesc">
+                            <h2>Christmas Tree</h2>
+                            <p>Written In: C++</p>
+                            <p>
+                                This is a a simple program that's key function is to take a number and
+                                print a Christmas Tree of that height. The program includes a few
+                                extra features outside what was asked of me including relevant colours for the tree,
+                                trunk
+                                and decoration as well as a
+                                random decoration atop the tree each time.
+                            </p>
+                        </div>
+                        <div class="imgWrapper">
+                            <img src="Images/christmastree.png" alt="" class="gitProjImg">
+                            <h2 class="gitMsg">View On <img src="Images/GitHub.png" alt="" width="20" height="20"
+                                    class="GHLogo"></h2>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <p class="lastUpdated">Page Last Updated: </p>
+        <p>Copyright &copy; Josh Warburton 2018</p>
+        <div class="footerlogo">
+            <a href="https://www.linkedin.com/in/joshwarburton/"><img src="Images/LinkedIn.png" alt="" width="40"
+                    height="40">
+                <a href="https://github.com/Warbi2601"><img src="Images/GitHub.png" alt="" width="40" height="40"></a>
+        </div>
+    </footer>
+
+    </div>
+
+    <div id="contactPopupForm">
+        <form action="SendMail.php" method="POST" id="contactForm">
+
+            <div class="inputBox">
+                <span class="requiredField">*</span>
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <br />
+            </div>
+
+
+            <div class="inputBox">
+                <span class="requiredField">*</span>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <br />
+            </div>
+
+
+
+            <div class="inputBox">
+                <span class="requiredField">*</span>
+                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required>
+                <br />
+            </div>
+
+
+            <div class="inputBox">
+                <span class="requiredField">*</span>
+                <textarea name="message" id="message" placeholder="Type your message here..." required></textarea>
+                <br />
+            </div>
+
+            <div class="inputBox">
+                <span class="requiredFieldBtn">*</span>
+                <input type="submit" value="Send Details" class="btnStandard">
+                <br />
+            </div>
+
+        </form>
+    </div>
+
+    <div id="contactPopup">
+        <a class="fas fa-comment-dots" id="popupIcon" href="#" role="button"></a>
+    </div>
+
+
+
+
+
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    <script src="JS/JavaScript.js"></script>
+</body>
+
+</html>

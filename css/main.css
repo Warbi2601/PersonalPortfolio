@@ -74,6 +74,26 @@ h1 {
     color: white;
 }
 
+.subheader {
+    display: flex;
+    justify-content: center;
+    background-color: #1d1f20;
+}
+
+.subheader h1 {
+    color: #fcfcfc;
+}
+
+.footnote {
+    text-decoration: none;
+    color: #1d1f20;
+}
+
+.footnote p {
+	text-align: center;
+    text-align-last: center;
+}
+
 .whiteBackground {
     background-color: #fcfcfc;
     padding-top: 40px;
@@ -555,14 +575,48 @@ nav ul {
     /* transform: rotate(-45deg) translate(-8px, 6px) ;*/
     /* l/r t/b*/
     transform: rotate(-45deg) translate(-6px, 8px) ;
-    }
-    /* Fade out the second bar */
-    .animateBurger .bar2 {
-     opacity: 0;
-    }
-    /* Rotate last bar */
-    .animateBurger .bar3 {
+}
+/* Fade out the second bar */
+.animateBurger .bar2 {
+    opacity: 0;
+}
+/* Rotate last bar */
+.animateBurger .bar3 {
     /* -webkit-transform: rotate(45deg) translate(-8px, -8px) ;*/
     /* transform: rotate(45deg) translate(-8px, -4px) ;*/
     transform: rotate(45deg) translate(-6px, -8px) ;
-    }
+}
+
+#contactPopup {
+    border-radius: 50%;
+    width: 10vh;
+    height: 10vh;
+    background-color: blue;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+#contactPopupForm {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    max-width: 70%;
+    background-color: #d8670d;
+    border-radius: 20px;
+}
+
+#contactForm {
+    padding: 15px;
+}
+
+#popupIcon {
+    position: absolute;
+    color: #d8670d;
+    font-size: 2.7rem;
+    text-decoration: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

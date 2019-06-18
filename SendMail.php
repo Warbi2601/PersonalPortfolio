@@ -9,15 +9,6 @@
     $isError = true;
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
     
-    //$_SESSION["ContactForm"] = NULL;
-
-    // if(!isset($_POST['name']) ||
-    // !isset($_POST['email']) ||
-    // !isset($_POST['phoneNumber']) ||
-    // !isset($_POST['message'])) {
-    //     errorMessage("You need to fill in all fields in order to send your details");       
-    // }
-    
     function errorMessage($error) {
         $isError = true;
 

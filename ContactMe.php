@@ -46,7 +46,7 @@ session_start();
                                 <li><a href="Qualifications.html" class="slideHover">Qualifications</a></li>
                                 <li><a href="WorkExperience.html" class="slideHover">Work Experience</a></li>
                                 <li><a href="Recommendations.html" class="slideHover">Recommendations</a></li>
-                                <li><a href="PreviousProjects.html" class="slideHover">Previous Projects</a></li>
+                                <li><a href="Projects.html" class="slideHover">Projects</a></li>
                                 <li><a href="CV.html" class="slideHover">CV</a></li>
                                 <li><a href="ContactMe.php" class="pageCheck">Contact Me</a></li>
                             </ul>
@@ -64,12 +64,6 @@ session_start();
                 </svg>
     
                 <div class="BannerCont-content">
-    
-                    <!-- <div class="banner">
-                        <div class="circle">
-                            <img src="Images/Logo2018.png">
-                        </div>
-                    </div> -->
                     <h1 class="heading">
                         Contact Me
                     </h1>

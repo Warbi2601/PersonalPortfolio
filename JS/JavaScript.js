@@ -34,3 +34,7 @@ var handleScroll = function() {
 	diagonal.setAttribute('points', [0,100, 100, skew, 100,100]);
   }
   window.addEventListener("scroll", handleScroll);
+
+  $('#contactPopup').click(function() {
+	  $('#contactPopupForm').toggle("fast");
+  });

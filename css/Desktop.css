@@ -145,6 +145,16 @@ nav ul li:first-child {
 	margin: auto;
 }
 
+.PreviousProjectsList p {
+	text-align: left;
+	text-align-last: left;
+}
+
+.footnote p {
+	text-align: center;
+	text-align-last: center;
+}
+
 .imgWrapper {
 	flex-basis: 40%;
 }
@@ -327,4 +337,72 @@ nav ul li:first-child {
 
 #ProjEW a:hover {
     color: #d8670d;
+}
+
+#ProjGL a:hover .gitProjImg {
+    opacity: 0.8;
+}
+
+#ProjGL a:hover .gitMsg {
+	opacity: 1;
+}
+
+#ProjGL a:hover {
+    color: #d8670d;
+}
+
+#ProjSaM a:hover .gitProjImg {
+    opacity: 0.8;
+}
+
+#ProjSaM a:hover .gitMsg {
+	opacity: 1;
+}
+
+#ProjSaM a:hover {
+    color: #d8670d;
+}
+
+#ProjMBS a:hover .gitProjImg {
+    opacity: 0.8;
+}
+
+#ProjMBS a:hover .gitMsg {
+	opacity: 1;
+}
+
+#ProjMBS a:hover {
+    color: #d8670d;
+}
+
+#ProjMBC a:hover .gitProjImg {
+    opacity: 0.8;
+}
+
+#ProjMBC a:hover .gitMsg {
+	opacity: 1;
+}
+
+#ProjMBC a:hover {
+    color: #d8670d;
+}
+
+#ProjWHV a:hover .gitProjImg {
+    opacity: 0.8;
+}
+
+#ProjWHV a:hover .gitMsg {
+	opacity: 1;
+}
+
+#ProjWHV a:hover {
+    color: #d8670d;
+}
+
+#contactPopupForm {
+	max-width: 30%;;
+}
+
+#contactPopup:hover {
+	cursor: pointer;
 }
