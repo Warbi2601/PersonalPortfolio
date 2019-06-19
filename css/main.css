@@ -355,6 +355,10 @@ blockquote:after {
     flex-basis: 100%;
 }
 
+.centered {
+    justify-content: center;
+}
+
 .WorkExperienceList .greyBackground .text {
     margin-top: 40px;
 }
@@ -591,7 +595,7 @@ nav ul {
     border-radius: 50%;
     width: 10vh;
     height: 10vh;
-    background-color: blue;
+    background-color: #d8670d;
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -603,7 +607,10 @@ nav ul {
     bottom: 60px;
     right: 60px;
     max-width: 70%;
-    background-color: #d8670d;
+    background-color: #fcfcfc;
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(29,31,32,1);
+    -moz-box-shadow: 4px 4px 20px 0px rgba(29,31,32,1);
+    box-shadow: 4px 4px 20px 0px rgba(29,31,32,1);
     border-radius: 20px;
 }
 
@@ -613,10 +620,15 @@ nav ul {
 
 #popupIcon {
     position: absolute;
-    color: #d8670d;
+    color: #fcfcfc;
     font-size: 2.7rem;
     text-decoration: none;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.contactMeTitle {
+    color: #d8670d;
+    margin: 0;
 }

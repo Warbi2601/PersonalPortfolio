@@ -16,7 +16,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="css/scss.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" media="only screen and (min-width : 600px)" href="css/Desktop.css">
@@ -390,10 +391,12 @@
         </div>
     </footer>
 
-    </div>
-
     <div id="contactPopupForm">
         <form action="SendMail.php" method="POST" id="contactForm">
+
+            <div class="inputBox centered">
+                <h1 class="contactMeTitle">Contact Me</h1>
+            </div>
 
             <div class="inputBox">
                 <span class="requiredField">*</span>
@@ -401,21 +404,17 @@
                 <br />
             </div>
 
-
             <div class="inputBox">
                 <span class="requiredField">*</span>
                 <input type="email" name="email" id="email" placeholder="Email" required>
                 <br />
             </div>
 
-
-
             <div class="inputBox">
                 <span class="requiredField">*</span>
                 <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required>
                 <br />
             </div>
-
 
             <div class="inputBox">
                 <span class="requiredField">*</span>
@@ -425,7 +424,7 @@
 
             <div class="inputBox">
                 <span class="requiredFieldBtn">*</span>
-                <input type="submit" value="Send Details" class="btnStandard">
+                <input type="submit" value="Send Details" class="btnStandard" id="sendMessage">
                 <br />
             </div>
 
@@ -433,12 +432,8 @@
     </div>
 
     <div id="contactPopup">
-        <a class="fas fa-comment-dots" id="popupIcon" href="#" role="button"></a>
+        <span class="fas fa-comment-dots" id="popupIcon"></span>
     </div>
-
-
-
-
 
     <script src="JS/jquery-3.2.1.min.js"></script>
     <script src="JS/JavaScript.js"></script>
