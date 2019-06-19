@@ -47,7 +47,99 @@ function toggleContactPopup() {
 
 $('#sendMessage').click(function (ev) {
 	ev.preventDefault();
+	var name = $('#name').val();
+	var email = $('#email').val();
+	var phoneNumber = $('#phoneNumber').val();
+	var message = $('#message').val();
+
+	if(validateForm(name, email, phoneNumber, message)){
+		sendMessage(name, email, phoneNumber, message);
+	}
 });
+
+function sendMessage(name, email, phoneNumber, message) {
+	$.post('/personalportfolio/sendmail.php', { name: name, email: email, phoneNumber: phoneNumber, message: message }, 
+	function (data) {
+
+	});
+}
+
+function validateForm(name, email, phoneNumber, message) {
+	var isName = validateName(name);
+	var isEmail = validateEmail(email);
+	var isPhoneNumber = validatePhoneNumber(phoneNumber);
+	var isMessage = validateMessage(message);
+	if(isName && isEmail && isPhoneNumber && isMessage){
+		return true;
+	}
+	else return false;
+}
+
+function validateName(name) {
+	if(name == "") {
+		handleError('#name');
+		return false; 
+	}
+	else {
+		removeError('#name');
+		return true;
+	}
+}
+
+function validateEmail(email) {
+	if(email == "") {
+		handleError('#email');
+		return false; 
+	}
+	else {
+		removeError('#email');
+		return true;
+	}
+}
+
+function validatePhoneNumber(phoneNumber) {
+	if(phoneNumber == "") {
+		handleError('#phoneNumber');
+		return false; 
+	}
+	else {
+		removeError('#phoneNumber');
+		return true;
+	}
+}
+
+function validateMessage(message) {
+	if(message == "") {
+		handleError('#message');
+		return false; 
+	}
+	else {
+		removeError('#message');
+		return true;
+	}
+}
+
+function removeError(errorID) {
+	if ($(errorID).parent().children().length === 2) {
+		$(errorID).removeClass("formErrorMsg");
+		var parent = $(errorID).parent()[0];
+		parent.removeChild(parent.lastChild);
+	}
+}
+
+function handleError(errorID) {
+	if ($(errorID).parent().children().length <= 1) {
+
+		$(errorID).addClass("formErrorMsg");
+		var parent = $(errorID).parent()[0];
+		var errorMsg = $("<p>")[0];
+		var errorName = $(errorID).attr('errorName')
+		errorMsg.classList.add("errorMsg");
+		errorMsg.innerHTML = "You need to input a " + errorName;
+		$(parent).append(errorMsg);
+
+	}
+}
 
 // Checks to see if the passed node is a child of a node
 function childOf(node, ancestor) {

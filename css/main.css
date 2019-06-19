@@ -209,8 +209,9 @@ textarea[id=message]
 
 .inputBox {
 	flex-basis: 100%;
-	display: flex;
-	margin: 11px 0px;
+    display: flex;
+    flex-direction: column;
+	margin: 6px 0px;
 }
 
 form {
@@ -633,4 +634,15 @@ nav ul {
 .contactMeTitle {
     color: #d8670d;
     margin: 0;
+}
+
+.formErrorMsg {
+    border: 1px solid red;
+}
+
+.errorMsg {
+    font-size: 0.8rem;
+    color: red;
+    text-align: left;
+    margin: 0 5px;
 }

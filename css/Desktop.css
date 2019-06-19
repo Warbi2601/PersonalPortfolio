@@ -406,3 +406,12 @@ nav ul li:first-child {
 #contactPopup:hover {
 	cursor: pointer;
 }
+
+#sendMessage {
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+#sendMessage:hover {
+	background-color: #1d1f20;
+}

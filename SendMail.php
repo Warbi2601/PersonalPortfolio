@@ -9,38 +9,11 @@
     $isError = true;
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
     
-    function errorMessage($error) {
-        $isError = true;
+    //NEED TO HANDLE JQUERY ERROR
+    if(!preg_match($email_exp, $email)) {
+        errorMessage(2);
+    }
 
-        if($error == 2)
-        {
-            $_SESSION["ContactForm"] = 2;
-        }
-        else if($error == 1)
-        {
-            $_SESSION["ContactForm"] = 1;
-        }
-    }    
-
-
-      if(!preg_match($email_exp, $email)) {
-          errorMessage(2);
-      }
-
-      if($_POST['name'] == "" || $_POST['email'] == "" || $_POST['phoneNumber'] == "" ||
-      $_POST['message'] == "") {
-          errorMessage(1);       
-      }
-      else
-      {
-          $isError = false;
-      }
-
-      if($isError == false)
-      {
-        $_SESSION["ContactForm"] = 0;
-        mail($email_to, $email_Subject, $message);
-      }
-
-      header("Location: ContactMe.php");
+    //NEED TO HANDLE SUCCESS RESPONSE
+    mail($email_to, $email_Subject, $message);
 ?>
