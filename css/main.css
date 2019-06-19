@@ -599,6 +599,7 @@ nav ul {
     position: fixed;
     bottom: 30px;
     right: 30px;
+    z-index: 4;
 }
 
 #contactPopupForm {
@@ -612,6 +613,7 @@ nav ul {
     -moz-box-shadow: 4px 4px 20px 0px rgba(29,31,32,1);
     box-shadow: 4px 4px 20px 0px rgba(29,31,32,1);
     border-radius: 20px;
+    z-index: 3;
 }
 
 #contactForm {
