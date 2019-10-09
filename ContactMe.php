@@ -1,3 +1,11 @@
+<!-- DEPRECATED -->
+<!-- DEPRECATED -->
+<!-- DEPRECATED -->
+<!-- DEPRECATED -->
+<!-- DEPRECATED -->
+<!-- DEPRECATED -->
+<!-- DEPRECATED -->
+
 <?php
 session_start();
 ?>

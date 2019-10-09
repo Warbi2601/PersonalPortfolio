@@ -218,6 +218,7 @@ form {
     display: flex;
     flex-basis: 100%;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .btnStandard {
@@ -601,6 +602,9 @@ nav ul {
     bottom: 30px;
     right: 30px;
     z-index: 4;
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(29,31,32,1);
+    -moz-box-shadow: 4px 4px 20px 0px rgba(29,31,32,1);
+    box-shadow: 4px 4px 20px 0px rgba(29,31,32,1);
 }
 
 #contactPopupForm {
@@ -609,6 +613,7 @@ nav ul {
     bottom: 60px;
     right: 60px;
     max-width: 70%;
+    min-width: 70%;
     background-color: #fcfcfc;
     -webkit-box-shadow: 4px 4px 20px 0px rgba(29,31,32,1);
     -moz-box-shadow: 4px 4px 20px 0px rgba(29,31,32,1);

@@ -45,7 +45,6 @@
                                 <li><a href="Recommendations.html" class="pageCheck">Recommendations</a></li>
                                 <li><a href="Projects.html" class="slideHover">Projects</a></li>
                                 <li><a href="CV.html" class="slideHover">CV</a></li>
-                                <li><a href="ContactMe.php" class="slideHover">Contact Me</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -151,37 +150,27 @@
         <form action="SendMail.php" method="POST" id="contactForm">
 
             <div class="inputBox centered">
-                <h1 class="contactMeTitle">Contact Me</h1>
+                <h1 class="contactMeTitle">Get In Touch</h1>
             </div>
 
             <div class="inputBox">
-                <span class="requiredField">*</span>
-                <input type="text" name="name" id="name" placeholder="Name" required>
-                <br />
+                <input errorName="name" type="text" name="name" id="name" placeholder="Name" required>
             </div>
 
             <div class="inputBox">
-                <span class="requiredField">*</span>
-                <input type="email" name="email" id="email" placeholder="Email" required>
-                <br />
+                <input errorName="email" type="email" name="email" id="email" placeholder="Email" required>
             </div>
 
             <div class="inputBox">
-                <span class="requiredField">*</span>
-                <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required>
-                <br />
+                <input errorName="phone number" type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" required>
             </div>
 
             <div class="inputBox">
-                <span class="requiredField">*</span>
-                <textarea name="message" id="message" placeholder="Type your message here..." required></textarea>
-                <br />
+                <textarea errorName="message" name="message" id="message" placeholder="Type your message here..." required></textarea>
             </div>
 
             <div class="inputBox">
-                <span class="requiredFieldBtn">*</span>
                 <input type="submit" value="Send Details" class="btnStandard" id="sendMessage">
-                <br />
             </div>
 
         </form>
