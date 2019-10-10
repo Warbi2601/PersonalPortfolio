@@ -21,6 +21,13 @@ function closeNav() {
 
 $(document).ready(function () {
 	$('.lastUpdated').text("Page Last Updated: " + new Date(document.lastModified).toLocaleDateString("en-GB"));
+	$('#currentYear').text(new Date().getFullYear());
+
+	$(".BannerCont-scroll").click(function (){
+		$('html, body').animate({
+			scrollTop: $(".mainPage").offset().top
+		}, 1000);
+	});
 });
 
 var handleScroll = function () {
@@ -37,13 +44,15 @@ var handleScroll = function () {
 window.addEventListener("scroll", handleScroll);
 
 
-$('#contactPopup').click(function () {
-	toggleContactPopup();
+$('#contactPopup').on('click', function () {
+	if($('#contactPopup').hasClass('open')) {
+		$('#contactPopupForm').fadeOut("500");
+		$('#contactPopup').removeClass('open');
+	} else {
+		$('#contactPopupForm').fadeIn("500");
+		$('#contactPopup').addClass('open');
+	}
 });
-
-function toggleContactPopup() {
-	$('#contactPopupForm').fadeToggle("500");
-}
 
 $('#sendMessage').click(function (ev) {
 	ev.preventDefault();
@@ -157,7 +166,7 @@ function childOf(node, ancestor) {
 }
 
 // code for closing contact me popout when the user clicks outside the box
-window.onclick = function (event) {
+window.onmousedown = function (event) {
 	var icon = document.getElementById('contactPopup');
 	var form = document.getElementById('contactPopupForm');
 

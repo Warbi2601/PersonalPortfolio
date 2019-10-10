@@ -69,6 +69,18 @@ nav ul li {
     border-bottom: 3px solid #d8670d;
 } */
 
+#contactPopup:hover .fa-comment-dots {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.circle:hover > img {
+    transform: scale(1.1);
+}
+
+.slideHover:hover {
+    transform: scale(1.1);
+}
+
 .slideHover::after {
     content: '';
     display: block;
@@ -228,6 +240,10 @@ nav ul li:first-child {
 	float: right;
 }
 
+.companyLogo:hover {
+	transform: scale(1.1);
+}
+
 .qualDesc table{
 	border-spacing: 150px 0px;
 	width: 60%;
@@ -251,10 +267,11 @@ nav ul li:first-child {
     max-width: 700px;
     font-weight: 100;
     margin: 0 auto;
-    color: #1d1f20;
+    color: #fcfcfc;
     line-height: 1.5;
     letter-spacing: 10px;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	text-shadow: 4px 4px black;
 }
 
 .gitProjImg {
@@ -262,141 +279,27 @@ nav ul li:first-child {
 }
 
 .gitMsg {
-	bottom: 25%;
-    right: 29%;
 	opacity: 0;
+	transform: scale(0) translate(-50%, -50%);
+	box-shadow: 0 0 4px grey;
 }
 
-#ProjBG a:hover .gitProjImg {
-    opacity: 0.8;
-}
-
-#ProjBG a:hover .gitMsg {
-	opacity: 1;
-}
-
-#ProjBG a:hover {
+.projCont > a.gitProj:hover {
     color: #d8670d;
 }
 
-#ProjF a:hover .gitProjImg {
-    opacity: 0.8;
+.projCont > a.gitProj:hover > .proj > .imgWrapper > .gitProjImg {
+	opacity: 0.8;
+	filter: blur(1px) grayscale(1);
+    -webkit-filter: blur(1px) grayscale(1);
+    -moz-filter: blur(1px) grayscale(1);
+    -o-filter: blur(1px) grayscale(1);
+    -ms-filter: blur(1px) grayscale(1);
 }
 
-#ProjF a:hover .gitMsg {
+.projCont > a.gitProj:hover > .proj > .imgWrapper > .gitMsg {
 	opacity: 1;
-}
-
-#ProjF a:hover {
-    color: #d8670d;
-}
-
-#ProjCPS a:hover .gitProjImg {
-    opacity: 0.8;
-}
-
-#ProjCPS a:hover .gitMsg {
-	opacity: 1;
-}
-
-#ProjCPS a:hover {
-    color: #d8670d;
-}
-
-#ProjCT a:hover .gitProjImg {
-    opacity: 0.8;
-}
-
-#ProjCT a:hover .gitMsg {
-	opacity: 1;
-}
-
-#ProjCT a:hover {
-    color: #d8670d;
-}
-
-#ProjPP a:hover .gitProjImg {
-    opacity: 0.8;
-}
-
-#ProjPP a:hover .gitMsg {
-	opacity: 1;
-}
-
-#ProjPP a:hover {
-    color: #d8670d;
-}
-
-#ProjEW a:hover .gitProjImg {
-    opacity: 0.8;
-}
-
-#ProjEW a:hover .gitMsg {
-	opacity: 1;
-}
-
-#ProjEW a:hover {
-    color: #d8670d;
-}
-
-#ProjGL a:hover .gitProjImg {
-    opacity: 0.8;
-}
-
-#ProjGL a:hover .gitMsg {
-	opacity: 1;
-}
-
-#ProjGL a:hover {
-    color: #d8670d;
-}
-
-#ProjSaM a:hover .gitProjImg {
-    opacity: 0.8;
-}
-
-#ProjSaM a:hover .gitMsg {
-	opacity: 1;
-}
-
-#ProjSaM a:hover {
-    color: #d8670d;
-}
-
-#ProjMBS a:hover .gitProjImg {
-    opacity: 0.8;
-}
-
-#ProjMBS a:hover .gitMsg {
-	opacity: 1;
-}
-
-#ProjMBS a:hover {
-    color: #d8670d;
-}
-
-#ProjMBC a:hover .gitProjImg {
-    opacity: 0.8;
-}
-
-#ProjMBC a:hover .gitMsg {
-	opacity: 1;
-}
-
-#ProjMBC a:hover {
-    color: #d8670d;
-}
-
-#ProjWHV a:hover .gitProjImg {
-    opacity: 0.8;
-}
-
-#ProjWHV a:hover .gitMsg {
-	opacity: 1;
-}
-
-#ProjWHV a:hover {
-    color: #d8670d;
+	transform: scale(1) translate(-50%, -50%);
 }
 
 #contactPopupForm {
