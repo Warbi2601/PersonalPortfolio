@@ -698,3 +698,8 @@ nav ul {
     text-align: left;
     margin: 0 5px;
 }
+
+.centeredBullets {
+    text-align: center;
+    list-style-position: inside;
+}
